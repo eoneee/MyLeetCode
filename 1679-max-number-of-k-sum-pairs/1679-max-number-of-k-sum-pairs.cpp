@@ -4,7 +4,7 @@ using namespace std;
 class Solution {
 public:
     int maxOperations(vector<int>& nums, int k) {
-        unordered_map<int,int> numCount;
+        unordered_map<int,int> numCount; //key - value
         int maxx = 0;
         for(int num : nums){
             int complement = k - num;
